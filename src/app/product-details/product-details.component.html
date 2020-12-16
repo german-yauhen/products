@@ -1,0 +1,7 @@
+<p>Welcome to product details page!</p>
+
+<div *ngIf="product">
+    <h3>{{product.name}}</h3>
+    <h4>{{product.price | currency: "USD"}}</h4>
+    <p *ngIf="product.description">{{product.description}}</p>
+</div>
