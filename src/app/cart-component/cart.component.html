@@ -1,6 +1,12 @@
 <h3>Cart</h3>
 
+<p>
+    <a routerLink="/shipping">Shipping Rates</a>
+</p>
+
 <div class="cart-item" *ngFor="let productItem of getProductItems()">
     <span>{{ productItem.name }}</span>
     <span>{{ productItem.price | currency: "USD" }}</span>
 </div>
+
+<button (click)="cleanCart()">Clear</button>
