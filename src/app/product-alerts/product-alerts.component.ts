@@ -15,7 +15,5 @@ export class ProductAlertsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    console.log("product-alerts component initialized...");
-  }
+  ngOnInit() {}
 }
